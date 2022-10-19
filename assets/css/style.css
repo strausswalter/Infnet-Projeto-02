@@ -2,6 +2,12 @@
 /* Archivo Black: fonte similar ao logo da empresa TrackServices */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
+
+
+
+
+
+
 body {
   --bs-bg-opacity: 1;
   font-family: 'Source Sans Pro', sans-serif;
@@ -13,13 +19,20 @@ h1 {
   font-size: 2.5rem;
 }
 
-/* Spinner */
-/* #spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-} */
+/*** Spinner ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /* NAVBAR */
 /* Limitar o tamanho da imagem do logo */
